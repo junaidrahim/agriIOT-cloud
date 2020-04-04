@@ -23,12 +23,14 @@ def data():
         soil_moisture = request.json["soil_moisture"]
         temperature_humidity = request.json["temperature_humidity"]
         acoustic = request.json["acoustic"]
+        electrochemical = request.json["electrochemical"]
 
         nodemcu_data = json.dumps({
             "timestamp": timestamp,
             "soil_moisture": soil_moisture,
             "temperature_humidity": temperature_humidity,
-            "acoustic": acoustic
+            "acoustic": acoustic,
+            "electrochemical": electrochemical
         })
 
         pub.sendMessage(topic, nodemcu_data)

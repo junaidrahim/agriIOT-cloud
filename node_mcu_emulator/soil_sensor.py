@@ -4,4 +4,7 @@ class AgriIOTSoilSensor:
     def __init__(self):
         pass
 
-    def 
+    def generateData(self, size):
+        data = np.random.random_sample(size) * 100 # because percentage
+        return list(data)
+

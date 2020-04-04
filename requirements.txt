@@ -1,3 +1,5 @@
 Flask
 google-cloud-pubsub
 firebase-admin
+numpy
+requests

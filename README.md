@@ -10,6 +10,7 @@ Cloud Config of an IOT Project
     "timestamp":"",
     "soil_moisture":"",
     "temperature_humidity":"",
-    "acoustic":""
+    "acoustic":"",
+    "electrochemical"
 }
 ```
